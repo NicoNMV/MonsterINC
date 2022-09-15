@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Monster_S.A_Wiki.iml" filepath="$PROJECT_DIR$/.idea/modules/Monster_S.A_Wiki.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Monster_S.A_Wiki.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Monster_S.A_Wiki.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Monster_S.A_Wiki.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Monster_S.A_Wiki.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Monster_S.A_Wiki.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Monster_S.A_Wiki.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Monster_S.A_Wiki.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Monster_S.A_Wiki.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>

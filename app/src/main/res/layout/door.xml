@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Sully">
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="414dp"
+        android:layout_height="678dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/Rosa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/door"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/roxo"
+        android:backgroundTintMode="add"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="663dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="77dp"
+        android:layout_height="69dp"
+        android:backgroundTint="@color/roxo"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/icons8_porta_30"
+        tools:layout_editor_absoluteX="333dp"
+        tools:layout_editor_absoluteY="664dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="70dp"
+        android:layout_height="66dp"
+        android:background="@color/roxo"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="665dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="75dp"
+        android:layout_height="73dp"
+        android:backgroundTint="@color/roxo"
+        app:srcCompat="@drawable/ic_baseline_school_24"
+        tools:layout_editor_absoluteX="252dp"
+        tools:layout_editor_absoluteY="661dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton9"
+        android:layout_width="81dp"
+        android:layout_height="68dp"
+        android:background="@color/roxo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_baseline_auto_stories_24"
+        tools:layout_editor_absoluteX="77dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="78dp"
+        android:layout_height="72dp"
+        android:backgroundTint="@color/roxo"
+        app:srcCompat="@drawable/ic_baseline_home_24"
+        tools:layout_editor_absoluteX="166dp"
+        tools:layout_editor_absoluteY="662dp" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="3dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="595dp"
+        android:layout_marginEnd="100dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="663dp" />
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="3dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="600dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider5"
+        tools:layout_editor_absoluteY="663dp" />
+
+    <View
+        android:id="@+id/divider11"
+        android:layout_width="3dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="720dp"
+        android:layout_marginEnd="50dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="663dp" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="3dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginEnd="100dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toStartOf="@+id/divider5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="663dp" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="425dp"
+        android:layout_height="62dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#B48CFC"
+        android:backgroundTintMode="src_over"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-5dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

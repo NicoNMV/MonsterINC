@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5DBCD2"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/roxo"
+        android:backgroundTintMode="add"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="663dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="160dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/Rosa"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/mike"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#B48CFC"
+        android:backgroundTintMode="src_over"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="420dp"
+        android:layout_marginBottom="84dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/m" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="160dp"
+        android:layout_height="153dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="@color/Rosa"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:srcCompat="@drawable/bu"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="159dp"
+        android:layout_height="153dp"
+        android:backgroundTint="@color/Rosa"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/mikeesully"
+        tools:layout_editor_absoluteX="226dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="164dp"
+        android:layout_height="155dp"
+        android:backgroundTint="#E8D3E2"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/door"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="735dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/roxo"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_assignment_ind_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
