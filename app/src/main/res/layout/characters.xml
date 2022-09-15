@@ -79,7 +79,7 @@
         android:id="@+id/textView3"
         android:layout_width="270dp"
         android:layout_height="37dp"
-        android:fontFamily="@font/monsterAG"
+        android:fontFamily="@font/monsterfont"
         android:text="Personagens"
         android:textColor="#006ED0"
         android:textSize="48sp"

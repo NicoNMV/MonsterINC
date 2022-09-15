@@ -10,7 +10,7 @@
         android:id="@+id/textView8"
         android:layout_width="177dp"
         android:layout_height="40dp"
-        android:fontFamily="@font/monsterAG"
+        android:fontFamily="@font/monsterfont"
         android:text="Historia"
         android:textColor="#006ED0"
         android:textSize="48sp"
