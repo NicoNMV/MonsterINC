@@ -7,8 +7,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ProgressBar;
 
 public class splash extends AppCompatActivity {
+
+    ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,12 +20,25 @@ public class splash extends AppCompatActivity {
 
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        new Handler().postDelayed(new Runnable(){
+        /*new Handler().postDelayed(new Runnable(){
             @Override
             public void run(){
                 startActivity(new Intent(getBaseContext(), MainActivity.class));
                 finish();
            }
-       },5000); 
+       },5000); */
+
+        progressBar = findViewById(R.id.progress_bar);
+
+        progressBar.setMax(100);
+        progressBar.setScaleY(3f);
+
+        progressAnimation();
+    }
+
+    public void progressAnimation(){
+        ProgressBarAnimation anim = new ProgressBarAnimation(this, progressBar, 0f, 100f);
+        anim.setDuration(7000);
+        progressBar.setAnimation(anim);
     }
 }
