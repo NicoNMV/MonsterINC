@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/Sully">
+    tools:context=".door">
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/imageButton"
         android:layout_width="414dp"
         android:layout_height="678dp"
         android:layout_marginBottom="36dp"
@@ -17,7 +17,7 @@
         tools:layout_editor_absoluteX="1dp" />
 
     <View
-        android:id="@+id/divider5"
+        android:id="@+id/divider4"
         android:layout_width="409dp"
         android:layout_height="70dp"
         android:background="?android:attr/listDivider"
@@ -27,7 +27,7 @@
         tools:layout_editor_absoluteY="663dp" />
 
     <ImageButton
-        android:id="@+id/imageButton14"
+        android:id="@+id/imageButton2"
         android:layout_width="77dp"
         android:layout_height="69dp"
         android:backgroundTint="@color/roxo"
@@ -37,7 +37,7 @@
         tools:layout_editor_absoluteY="664dp" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/imageButton8"
         android:layout_width="70dp"
         android:layout_height="66dp"
         android:background="@color/roxo"
@@ -46,7 +46,7 @@
         tools:layout_editor_absoluteY="665dp" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/imageButton17"
         android:layout_width="75dp"
         android:layout_height="73dp"
         android:backgroundTint="@color/roxo"
@@ -55,7 +55,7 @@
         tools:layout_editor_absoluteY="661dp" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/imageButton18"
         android:layout_width="81dp"
         android:layout_height="68dp"
         android:background="@color/roxo"
@@ -64,7 +64,7 @@
         tools:layout_editor_absoluteX="77dp" />
 
     <ImageButton
-        android:id="@+id/imageButton15"
+        android:id="@+id/imageButton19"
         android:layout_width="78dp"
         android:layout_height="72dp"
         android:backgroundTint="@color/roxo"
@@ -73,7 +73,7 @@
         tools:layout_editor_absoluteY="662dp" />
 
     <View
-        android:id="@+id/divider12"
+        android:id="@+id/divider7"
         android:layout_width="3dp"
         android:layout_height="70dp"
         android:layout_marginStart="595dp"
@@ -84,7 +84,7 @@
         tools:layout_editor_absoluteY="663dp" />
 
     <View
-        android:id="@+id/divider10"
+        android:id="@+id/divider8"
         android:layout_width="3dp"
         android:layout_height="70dp"
         android:layout_marginStart="100dp"
@@ -95,7 +95,7 @@
         tools:layout_editor_absoluteY="663dp" />
 
     <View
-        android:id="@+id/divider11"
+        android:id="@+id/divider13"
         android:layout_width="3dp"
         android:layout_height="70dp"
         android:layout_marginStart="720dp"
@@ -106,7 +106,7 @@
         tools:layout_editor_absoluteY="663dp" />
 
     <View
-        android:id="@+id/divider9"
+        android:id="@+id/divider15"
         android:layout_width="3dp"
         android:layout_height="70dp"
         android:layout_marginStart="250dp"
@@ -117,7 +117,7 @@
         tools:layout_editor_absoluteY="663dp" />
 
     <View
-        android:id="@+id/divider2"
+        android:id="@+id/divider20"
         android:layout_width="425dp"
         android:layout_height="62dp"
         android:background="?android:attr/listDivider"
@@ -125,5 +125,4 @@
         android:backgroundTintMode="src_over"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-5dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

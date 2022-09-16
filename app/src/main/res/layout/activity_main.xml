@@ -104,27 +104,29 @@
         tools:layout_editor_absoluteX="4dp" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/btnuniversity"
         android:layout_width="159dp"
         android:layout_height="153dp"
         android:layout_marginTop="43dp"
         android:layout_marginEnd="29dp"
         android:backgroundTint="@color/Rosa"
+        android:onClick="openUniversity"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
         app:srcCompat="@drawable/mikeesully" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btndoor"
         android:layout_width="164dp"
         android:layout_height="155dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="41dp"
         android:layout_marginEnd="30dp"
         android:backgroundTint="#E8D3E2"
+        android:onClick="openDoor"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton7"
+        app:layout_constraintEnd_toStartOf="@+id/btnuniversity"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9"
         app:srcCompat="@drawable/door" />
@@ -142,7 +144,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/textView11"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPersona" />
 
     <TextView
         android:id="@+id/textView11"
@@ -155,7 +157,7 @@
         android:textColor="@color/titulo"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+        app:layout_constraintTop_toBottomOf="@+id/btnstory" />
 
     <TextView
         android:id="@+id/textView12"
@@ -170,7 +172,7 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/textView13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3" />
+        app:layout_constraintTop_toBottomOf="@+id/btndoor" />
 
     <TextView
         android:id="@+id/textView13"
@@ -183,22 +185,23 @@
         android:textColor="@color/titulo"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton7" />
+        app:layout_constraintTop_toBottomOf="@+id/btnuniversity" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btnstory"
         android:layout_width="160dp"
         android:layout_height="153dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="29dp"
         android:backgroundTint="@color/Rosa"
+        android:onClick="openStory"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
         app:srcCompat="@drawable/bu" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/btnPersona"
         android:layout_width="160dp"
         android:layout_height="155dp"
         android:layout_marginStart="30dp"
@@ -206,13 +209,14 @@
         android:layout_marginEnd="32dp"
         android:backgroundTint="@color/Rosa"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/btnstory"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14"
-        app:srcCompat="@drawable/mike" />
+        app:srcCompat="@drawable/mike"
+        android:onClick="openCharacter"/>
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/btncarteira"
         android:layout_width="52dp"
         android:layout_height="55dp"
         android:layout_marginStart="-100dp"
@@ -223,7 +227,8 @@
         app:layout_constraintEnd_toStartOf="@+id/divider"
         app:layout_constraintStart_toEndOf="@+id/divider"
         app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:srcCompat="@drawable/ic_baseline_assignment_ind_24" />
+        app:srcCompat="@drawable/ic_baseline_assignment_ind_24"
+        android:onClick="openID" />
 
     <TextView
         android:id="@+id/textView14"
@@ -238,6 +243,6 @@
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton8" />
+        app:layout_constraintTop_toBottomOf="@+id/btncarteira" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
