@@ -6,4 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".sulley">
 
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/carteirasulli"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="253dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtNameBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="155dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
