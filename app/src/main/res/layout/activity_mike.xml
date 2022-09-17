@@ -6,17 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".mike">
 
+    <TextView
+        android:id="@+id/txtNameBack2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <View
+        android:id="@+id/divider12"
+        android:layout_width="582dp"
+        android:layout_height="82dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/titulo"
+        android:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider21"
+        android:layout_width="582dp"
+        android:layout_height="82dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/titulo"
+        android:backgroundTintMode="add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView7"
+        android:layout_width="244dp"
+        android:layout_height="226dp"
+        android:layout_marginTop="200dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider10"
+        app:srcCompat="@drawable/carteirasulli"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/carteiramike"
-        tools:layout_editor_absoluteY="106dp" />
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="-60dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider10"
+        app:srcCompat="@drawable/png_transparent_james_p_sullivan_monsters_inc_mike_sulley_to_the_rescue_mike_wazowski_pixar_monster_university_thumbnail_removebg_preview" />
 
     <TextView
-        android:id="@+id/txtNameBack"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="48dp" />
+        android:layout_marginBottom="10dp"
+        android:text="Estudante"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
