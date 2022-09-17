@@ -49,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, university.class);
         startActivity(intent);
     }
+    public void openHome(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 
 
 }
