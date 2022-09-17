@@ -14,6 +14,15 @@
         android:theme="@style/Theme.MonsterSAWiki"
         tools:targetApi="31">
         <activity
+            android:name=".mike"
+            android:exported="false" />
+        <activity
+            android:name=".boo"
+            android:exported="false" />
+        <activity
+            android:name=".sulley"
+            android:exported="false" />
+        <activity
             android:name=".university"
             android:exported="false" />
         <activity
