@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Sully"
+    tools:context=".quiz">
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="61dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28">
+
+        <RadioButton
+            android:id="@+id/btnYes1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/btnNo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/divider24"
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/roxo"
+        android:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider23"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#B48CFC"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider23"
+        app:srcCompat="@drawable/m" />
+
+    <ImageButton
+        android:id="@+id/btncarteira4"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="-56dp"
+        android:background="@color/roxo"
+        android:onClick="openID"
+        android:scaleType="fitCenter"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider23"
+        app:srcCompat="@drawable/ic_baseline_assignment_ind_24" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/monsterfont"
+        android:text="Descubra seu"
+        android:textColor="@color/titulo"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider23" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/monsterfont"
+        android:text="Monstro"
+        android:textColor="@color/titulo"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="Você tem medo de aranha?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Você tem medo de altura?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="70dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="4dp"
+        android:background="@color/roxo"
+        android:onClick="openCharacter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton27"
+        android:layout_width="75dp"
+        android:layout_height="73dp"
+        android:backgroundTint="@color/roxo"
+        android:onClick="openUniversity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton15"
+        app:layout_constraintStart_toEndOf="@+id/imageButton24"
+        app:srcCompat="@drawable/ic_baseline_school_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton24"
+        android:layout_width="78dp"
+        android:layout_height="72dp"
+        android:backgroundTint="@color/roxo"
+        android:onClick="openHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="77dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/roxo"
+        android:onClick="openDoor"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icons8_porta_30" />
+
+    <ImageButton
+        android:id="@+id/imageButton26"
+        android:layout_width="81dp"
+        android:layout_height="68dp"
+        android:background="@color/roxo"
+        android:onClick="openStory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton24"
+        app:layout_constraintStart_toEndOf="@+id/imageButton14"
+        app:srcCompat="@drawable/ic_baseline_auto_stories_24" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="61dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29">
+
+        <RadioButton
+            android:id="@+id/btnYes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sim"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/btnNo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Não"
+            android:textColor="@color/black" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnFind"
+        android:layout_width="152dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="32dp"
+        android:onClick="answerQuiz"
+        android:text="Descubra"
+        app:layout_constraintBottom_toTopOf="@+id/divider24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3"
+        app:layout_constraintVertical_bias="0.222" />
+</androidx.constraintlayout.widget.ConstraintLayout>
