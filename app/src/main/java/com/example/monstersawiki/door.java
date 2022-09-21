@@ -1,6 +1,6 @@
 package com.example.monstersawiki;
 
-import static com.example.monstersawiki.R.id.btnporta_local;
+import static com.example.monstersawiki.R.id.btnporta;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -23,7 +23,7 @@ public class door extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_door);
-        btnporta = findViewById(btnporta_local);
+        btnporta = findViewById(R.id.btnporta);
     }
 
     public void mostrarLoc(View view) {
