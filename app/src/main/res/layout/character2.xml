@@ -28,7 +28,7 @@
             android:id="@+id/button2"
             android:layout_width="181dp"
             android:layout_height="36dp"
-            android:onClick="openCena5"
+            android:onClick="openCena3"
             android:text="Cena Pós-Credito"
             android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,7 @@
             android:id="@+id/button"
             android:layout_width="181dp"
             android:layout_height="36dp"
-            android:onClick="openCena4"
+            android:onClick="openCena2"
             android:text="Cena Pós-Credito"
             android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +52,7 @@
             android:id="@+id/button3"
             android:layout_width="181dp"
             android:layout_height="36dp"
-            android:onClick="openCena6"
+            android:onClick="openCena1"
             android:text="Cena Pós-Credito"
             android:textSize="10sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +81,7 @@
             android:layout_height="104dp"
             android:layout_marginEnd="20dp"
             android:fontFamily="sans-serif"
-            android:text="@string/boo"
+            android:text="@string/roz"
             android:textAlignment="viewStart"
             android:textColor="@color/black"
             android:textSize="13sp"
@@ -158,7 +158,7 @@
             android:layout_marginEnd="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/divider30"
-            app:srcCompat="@drawable/randall" />
+            app:srcCompat="@drawable/waternoose" />
 
         <View
             android:id="@+id/divider18"
@@ -242,7 +242,7 @@
             android:layout_width="180dp"
             android:layout_height="104dp"
             android:fontFamily="sans-serif"
-            android:text="@string/mike"
+            android:text="@string/randall"
             android:textAlignment="viewStart"
             android:textColor="@color/black"
             android:textSize="12sp"
@@ -255,7 +255,7 @@
             android:layout_width="180dp"
             android:layout_height="104dp"
             android:fontFamily="sans-serif"
-            android:text="@string/mike"
+            android:text="@string/water"
             android:textAlignment="viewStart"
             android:textColor="@color/black"
             android:textSize="12sp"
@@ -355,7 +355,6 @@
             android:id="@+id/imageView8"
             android:layout_width="144dp"
             android:layout_height="155dp"
-            android:layout_marginTop="40dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.127"
             app:layout_constraintStart_toStartOf="parent"
@@ -366,7 +365,6 @@
             android:id="@+id/textView38"
             android:layout_width="80dp"
             android:layout_height="27dp"
-            android:layout_marginTop="40dp"
             android:fontFamily="@font/monsterfont"
             android:text="Sulley"
             android:textColor="@color/black"
@@ -379,6 +377,3 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
-
-
-
