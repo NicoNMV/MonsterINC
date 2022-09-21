@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5DBCD2"
+    tools:context=".splash">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="530dp"
+        android:layout_height="255dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="6dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/help_removebg_preview" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="326dp"
+        android:layout_height="294dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="335dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/m" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="124dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="-325dp"
+        android:layout_marginBottom="-132dp"
+        android:progressTint="@color/design_default_color_error"
+        android:rotation="-5"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/imageView9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

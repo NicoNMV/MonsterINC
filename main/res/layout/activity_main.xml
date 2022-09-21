@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5DBCD2"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#B48CFC"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider14"
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="1dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="@color/roxo"
+        android:backgroundTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="-250dp"
+        android:layout_marginTop="-57dp"
+        android:layout_marginEnd="-250dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/m" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="78dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="86dp"
+        android:backgroundTint="@color/roxo"
+        android:onClick="openHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton11"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.991"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="75dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="85dp"
+        android:backgroundTint="@color/roxo"
+        android:onClick="openUniversity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton12"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_school_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="77dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="4dp"
+        android:backgroundTint="@color/roxo"
+        android:onClick="openDoor"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/icons8_porta_30" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="81dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="95dp"
+        android:background="@color/roxo"
+        android:onClick="openStory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton10"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_baseline_auto_stories_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton10"
+        android:layout_width="70dp"
+        android:layout_height="66dp"
+        android:background="@color/roxo"
+        android:onClick="openCharacter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <ImageButton
+        android:id="@+id/btnuniversity"
+        android:layout_width="159dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="29dp"
+        android:backgroundTint="@color/Rosa"
+        android:onClick="openUniversity"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:srcCompat="@drawable/mikeesully" />
+
+    <ImageButton
+        android:id="@+id/btndoor"
+        android:layout_width="164dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="#E8D3E2"
+        android:onClick="openDoor"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btnuniversity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@drawable/door" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="83dp"
+        android:fontFamily="@font/monsterfont"
+        android:text="Personagens"
+        android:textColor="@color/titulo"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPersona" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="66dp"
+        android:fontFamily="@font/monsterfont"
+        android:text="Historia"
+        android:textColor="@color/titulo"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnstory" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="97dp"
+        android:fontFamily="@font/monsterfont"
+        android:text="Porta"
+        android:textColor="@color/titulo"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btndoor" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:fontFamily="@font/monsterfont"
+        android:text="Universidade"
+        android:textColor="@color/titulo"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnuniversity" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/monsterfont"
+        android:text="Quiz"
+        android:textColor="@color/titulo"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton25" />
+
+    <ImageButton
+        android:id="@+id/btnstory"
+        android:layout_width="160dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="29dp"
+        android:backgroundTint="@color/Rosa"
+        android:onClick="openStory"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@drawable/bu" />
+
+    <ImageButton
+        android:id="@+id/btnPersona"
+        android:layout_width="160dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/Rosa"
+        android:onClick="openCharacter"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/btnstory"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:srcCompat="@drawable/mike" />
+
+    <ImageButton
+        android:id="@+id/btncarteira"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="-55dp"
+        android:layout_marginEnd="-400dp"
+        android:background="@color/roxo"
+        android:onClick="openID"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintStart_toEndOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/ic_baseline_assignment_ind_24" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="59dp"
+        android:fontFamily="@font/monsterfont"
+        android:text="Monstros S.A."
+        android:textColor="@color/titulo"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncarteira" />
+
+    <ImageButton
+        android:id="@+id/imageButton25"
+        android:layout_width="167dp"
+        android:layout_height="156dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/Rosa"
+        android:onClick="openQuiz"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:srcCompat="@drawable/randall" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
