@@ -15,11 +15,6 @@ public class character extends AppCompatActivity {
 
         getSupportActionBar().hide();
     }
-    public void openID(View view){
-        Intent intent = new Intent(this, menuID.class);
-        startActivity(intent);
-    }
-    
     public void openCena1(View view){
         Uri uri = Uri.parse("https://youtu.be/wV_FMbJ2e6w");
         Intent it = new Intent(Intent.ACTION_VIEW,uri);
