@@ -25,6 +25,8 @@ public class door extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_door);
         btnporta = findViewById(R.id.btnporta);
+
+        getSupportActionBar().hide();
     }
 
     public void mostrarLoc(View view) {
