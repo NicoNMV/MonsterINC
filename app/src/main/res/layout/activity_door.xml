@@ -7,21 +7,52 @@
     android:onClick="mostrarLoc"
     tools:context=".door">
 
+    <View
+        android:id="@+id/divider15"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:background="?android:attr/listDivider"
+        android:backgroundTint="#B48CFC"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btncarteira6"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="-56dp"
+        android:background="@color/roxo"
+        android:onClick="openID"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/divider15"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="@+id/divider15"
+        app:layout_constraintTop_toBottomOf="@+id/divider15"
+        app:srcCompat="@drawable/ic_baseline_assignment_ind_24" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/divider15"
+        app:layout_constraintTop_toTopOf="@+id/divider15"
+        app:srcCompat="@drawable/m" />
+
     <ImageButton
         android:id="@+id/btnporta"
-        android:layout_width="414dp"
-        android:layout_height="678dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="36dp"
+        android:layout_width="437dp"
+        android:layout_height="618dp"
+        android:layout_marginBottom="-10dp"
         android:backgroundTint="@color/Rosa"
         android:onClick="mostrarLoc"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/divider20"
-        app:layout_constraintTop_toBottomOf="@+id/divider20"
-        app:layout_constraintVertical_bias="0.121"
-        app:srcCompat="@drawable/door" />
+        app:layout_constraintBottom_toTopOf="@+id/divider4"
+        app:srcCompat="@drawable/door"
+        tools:layout_editor_absoluteX="-13dp" />
 
     <View
         android:id="@+id/divider4"
@@ -30,54 +61,64 @@
         android:background="?android:attr/listDivider"
         android:backgroundTint="@color/roxo"
         android:backgroundTintMode="add"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="663dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="77dp"
         android:layout_height="69dp"
+        android:layout_marginEnd="1dp"
         android:backgroundTint="@color/roxo"
+        android:onClick="openDoor"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/icons8_porta_30"
-        tools:layout_editor_absoluteX="333dp"
-        tools:layout_editor_absoluteY="664dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icons8_porta_30" />
 
     <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="70dp"
         android:layout_height="66dp"
         android:background="@color/roxo"
-        app:srcCompat="@drawable/ic_baseline_person_24"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="665dp" />
+        android:onClick="openCharacter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
 
     <ImageButton
         android:id="@+id/imageButton17"
         android:layout_width="75dp"
         android:layout_height="73dp"
         android:backgroundTint="@color/roxo"
-        app:srcCompat="@drawable/ic_baseline_school_24"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="661dp" />
+        android:onClick="openUniversity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/imageButton19"
+        app:srcCompat="@drawable/ic_baseline_school_24" />
 
     <ImageButton
         android:id="@+id/imageButton18"
         android:layout_width="81dp"
         android:layout_height="68dp"
         android:background="@color/roxo"
+        android:onClick="openStory"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/ic_baseline_auto_stories_24"
-        tools:layout_editor_absoluteX="77dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageButton19"
+        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:srcCompat="@drawable/ic_baseline_auto_stories_24" />
 
     <ImageButton
         android:id="@+id/imageButton19"
         android:layout_width="78dp"
         android:layout_height="72dp"
         android:backgroundTint="@color/roxo"
-        app:srcCompat="@drawable/ic_baseline_home_24"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="662dp" />
+        android:onClick="openHome"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/divider4"
+        app:layout_constraintStart_toStartOf="@+id/divider4"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
 
     <View
         android:id="@+id/divider7"
@@ -112,24 +153,4 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="663dp" />
 
-    <View
-        android:id="@+id/divider15"
-        android:layout_width="3dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginEnd="100dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toStartOf="@+id/divider5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="663dp" />
-
-    <View
-        android:id="@+id/divider20"
-        android:layout_width="425dp"
-        android:layout_height="62dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="#B48CFC"
-        android:backgroundTintMode="src_over"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-5dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
