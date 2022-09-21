@@ -60,150 +60,6 @@
         app:layout_constraintTop_toBottomOf="@+id/divider17" />
 
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="144dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21"
-        app:srcCompat="@drawable/sully" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="80dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/monsterfont"
-        android:text="Sulley"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.216"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="80dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="136dp"
-        android:fontFamily="@font/monsterfont"
-        android:text="Mike"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider18" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="80dp"
-        android:layout_height="27dp"
-        android:layout_marginTop="15dp"
-        android:fontFamily="@font/monsterfont"
-        android:text="Boo"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.628"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider19" />
-
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="181dp"
-        android:layout_height="102dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/sulley"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.622"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="180dp"
-        android:layout_height="104dp"
-        android:layout_marginEnd="36dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/mike"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="180dp"
-        android:layout_height="104dp"
-        android:layout_marginEnd="20dp"
-        android:fontFamily="sans-serif"
-        android:text="@string/boo"
-        android:textAlignment="viewStart"
-        android:textColor="@color/black"
-        android:textSize="13sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.918"
-        app:layout_constraintStart_toEndOf="@+id/imageView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
-
-    <View
-        android:id="@+id/divider18"
-        android:layout_width="300dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="30dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="@color/black"
-        android:backgroundTintMode="add"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
-
-    <View
-        android:id="@+id/divider19"
-        android:layout_width="300dp"
-        android:layout_height="1dp"
-        android:layout_marginTop="30dp"
-        android:background="?android:attr/listDivider"
-        android:backgroundTint="@color/black"
-        android:backgroundTintMode="add"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
-
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="145dp"
-        android:layout_height="156dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider18"
-        app:srcCompat="@drawable/mikea" />
-
-    <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="146dp"
-        android:layout_height="154dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider19"
-        app:srcCompat="@drawable/boo" />
-
     <View
         android:id="@+id/divider2"
         android:layout_width="409dp"
@@ -268,42 +124,13 @@
         app:layout_constraintStart_toEndOf="@+id/imageButton3"
         app:srcCompat="@drawable/ic_baseline_auto_stories_24" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="182dp"
-        android:layout_height="36dp"
-        android:onClick="openCena1"
-        android:text="Cena Pós-Credito"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.912"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="182dp"
-        android:layout_height="36dp"
-        android:onClick="openCena2"
-        android:text="Cena Pós-Credito"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="181dp"
-        android:layout_height="36dp"
-        android:onClick="openCena3"
-        android:text="Cena Pós-Credito"
-        android:textSize="10sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+    <include
+        layout="@layout/character2"
+        android:layout_width="415dp"
+        android:layout_height="608dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
+        tools:layout_editor_absoluteX="-4dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

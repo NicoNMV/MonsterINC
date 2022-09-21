@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Sully">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="181dp"
+            android:layout_height="36dp"
+            android:onClick="openCena3"
+            android:text="Cena Pós-Credito"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="181dp"
+            android:layout_height="36dp"
+            android:onClick="openCena5"
+            android:text="Cena Pós-Credito"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="181dp"
+            android:layout_height="36dp"
+            android:onClick="openCena4"
+            android:text="Cena Pós-Credito"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.139"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="181dp"
+            android:layout_height="36dp"
+            android:onClick="openCena6"
+            android:text="Cena Pós-Credito"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="180dp"
+            android:layout_height="104dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/boo"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toEndOf="@+id/imageView27"
+            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="180dp"
+            android:layout_height="104dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/boo"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.914"
+            app:layout_constraintStart_toEndOf="@+id/imageView30"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="80dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/monsterfont"
+            android:text="Boo"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.628"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider18" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="80dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/monsterfont"
+            android:text="Roz"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.628"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider29" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="146dp"
+            android:layout_height="154dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.021"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider18"
+            app:srcCompat="@drawable/boo" />
+
+        <ImageView
+            android:id="@+id/imageView30"
+            android:layout_width="146dp"
+            android:layout_height="154dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider29"
+            app:srcCompat="@drawable/rozinha" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="146dp"
+            android:layout_height="154dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider19"
+            app:srcCompat="@drawable/randall" />
+
+        <ImageView
+            android:id="@+id/imageView31"
+            android:layout_width="146dp"
+            android:layout_height="154dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider30"
+            app:srcCompat="@drawable/randall" />
+
+        <View
+            android:id="@+id/divider18"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"
+            android:backgroundTintMode="add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView24" />
+
+        <View
+            android:id="@+id/divider19"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"
+            android:backgroundTintMode="add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView27" />
+
+        <View
+            android:id="@+id/divider29"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"
+            android:backgroundTintMode="add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView29" />
+
+        <View
+            android:id="@+id/divider30"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"
+            android:backgroundTintMode="add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.72"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView30" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="182dp"
+            android:layout_height="36dp"
+            android:onClick="openCena2"
+            android:text="Cena Pós-Credito"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="180dp"
+            android:layout_height="104dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/mike"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="180dp"
+            android:layout_height="104dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/mike"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView29"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="180dp"
+            android:layout_height="104dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/mike"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView29"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="80dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="136dp"
+            android:fontFamily="@font/monsterfont"
+            android:text="Mike"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView24"
+            app:layout_constraintTop_toBottomOf="@+id/divider20" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="91dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="124dp"
+            android:fontFamily="@font/monsterfont"
+            android:text="Randall"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView29"
+            app:layout_constraintTop_toBottomOf="@+id/divider19" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="128dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="88dp"
+            android:fontFamily="@font/monsterfont"
+            android:text="Waternoose"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView31"
+            app:layout_constraintTop_toBottomOf="@+id/divider30" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="145dp"
+            android:layout_height="156dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider20"
+            app:srcCompat="@drawable/mikea" />
+
+        <View
+            android:id="@+id/divider20"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/black"
+            android:backgroundTintMode="add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="182dp"
+            android:layout_height="36dp"
+            android:onClick="openCena1"
+            android:text="Cena Pós-Credito"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.864"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="181dp"
+            android:layout_height="102dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/sulley"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.403"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="144dp"
+            android:layout_height="155dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.127"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sully" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="80dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/monsterfont"
+            android:text="Sulley"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.137"
+            app:layout_constraintStart_toEndOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+
+
