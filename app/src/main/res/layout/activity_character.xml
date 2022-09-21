@@ -7,17 +7,6 @@
     android:background="@color/Sully"
     tools:context=".character">
 
-    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-            </LinearLayout>
-    </ScrollView>
-
     <View
         android:id="@+id/divider17"
         android:layout_width="416dp"
@@ -45,11 +34,11 @@
         android:id="@+id/imageView8"
         android:layout_width="144dp"
         android:layout_height="155dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.112"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider17"
+        app:layout_constraintTop_toBottomOf="@+id/textView21"
         app:srcCompat="@drawable/sully" />
 
     <TextView
@@ -67,17 +56,24 @@
         android:id="@+id/textView16"
         android:layout_width="80dp"
         android:layout_height="27dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="136dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="353dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider18" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="80dp"
         android:layout_height="27dp"
+        android:layout_marginTop="15dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="560dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.628"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider19" />
 
     <TextView
         android:id="@+id/textView18"
@@ -109,19 +105,27 @@
         android:id="@+id/textView19"
         android:layout_width="180dp"
         android:layout_height="104dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
         android:fontFamily="sans-serif"
         android:text="TextView"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="404dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="180dp"
         android:layout_height="104dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
         android:fontFamily="sans-serif"
         android:text="TextView"
-        tools:layout_editor_absoluteX="211dp"
-        tools:layout_editor_absoluteY="611dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <TextView
         android:id="@+id/textView21"
@@ -141,36 +145,45 @@
         android:id="@+id/divider18"
         android:layout_width="300dp"
         android:layout_height="1dp"
+        android:layout_marginTop="15dp"
         android:background="?android:attr/listDivider"
         android:backgroundTint="#808080"
         android:backgroundTintMode="add"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="351dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 
     <View
         android:id="@+id/divider19"
         android:layout_width="300dp"
         android:layout_height="1dp"
+        android:layout_marginTop="15dp"
         android:background="?android:attr/listDivider"
         android:backgroundTint="#808080"
         android:backgroundTintMode="add"
-        tools:layout_editor_absoluteX="55dp"
-        tools:layout_editor_absoluteY="533dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="145dp"
         android:layout_height="156dp"
-        app:srcCompat="@drawable/mikea"
-        tools:layout_editor_absoluteX="246dp"
-        tools:layout_editor_absoluteY="352dp" />
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider18"
+        app:srcCompat="@drawable/mikea" />
 
     <ImageView
         android:id="@+id/imageView11"
         android:layout_width="146dp"
         android:layout_height="154dp"
-        app:srcCompat="@drawable/boo"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="561dp" />
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider19"
+        app:srcCompat="@drawable/boo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
