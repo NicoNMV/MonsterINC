@@ -100,5 +100,14 @@
         A universidade, presente no filme, foi inspirada em universidades famosas dos Estados Unidos, incluindo Berkeley, que inspirou a entrada da escola dentro da animação.
     </string>
     <string name="action_settings">Settings</string>
+    <string name="sulley">
+        Ao trabalhar para devolver Boo ao mundo humano, Sulley consegue descobrir uma conspiração da empresa enquanto também resolve uma crise de energia que assolou a cidade de Monstrópolis .
+    </string>
+    <string name="mike">
+        Mike Wazowski é o protagonista da série Monstros S.A e melhor amigo de Sulley. Ajuda Sulley a descobrir as conspirações da empresa e salvar Boo.
+    </string>
+    <string name="boo">
+        Mary Gibbs, mais conhecida como Boo, é uma humana que virou "melhor amiga" de Sullivan e um pouco depois, Sullivan virou "melhor amigo"  de Boo.
+    </string>
     <string name="chNavegador" />
 </resources>
