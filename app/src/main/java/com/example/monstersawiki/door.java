@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -21,10 +22,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
-public class door extends AppCompatActivity {
+public class door extends AppCompatActivity implements  SensorEventListener {
 
-private SensorManager sensorManager;
-private Sensor acelerometro;
+    SensorManager sensorManager;
+    Sensor sensor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -32,9 +33,8 @@ private Sensor acelerometro;
         setContentView(R.layout.activity_door);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        acelerometro = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
-
-        sensorManager.registerListener(this, acelerometro, SensorManager.SENSOR_DELAY_NORMAL);
+        sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        sensorManager.registerListener( this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
         }
 
         @Override
@@ -45,7 +45,13 @@ private Sensor acelerometro;
 
 
         }
-        public void buscarGPS(View v) {
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int i) {
+
+    }
+
+    public void buscarGPS(View v) {
             if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(door.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
                 ActivityCompat.requestPermissions(door.this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
