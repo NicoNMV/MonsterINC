@@ -44,7 +44,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/divider3"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/m" />
+        app:srcCompat="@drawable/m"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageButton
         android:id="@+id/btncarteira2"
@@ -67,7 +68,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/monsterfont"
-        android:text="Historia"
+        android:text="@string/historia"
         android:textColor="#006ED0"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -153,7 +154,7 @@
         android:fontFamily="@font/monsterfont"
         android:linksClickable="true"
         android:onClick="openAbout"
-        android:text="Saiba Mais"
+        android:text="@string/saiba_mais"
         android:textColor="@color/titulo"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
