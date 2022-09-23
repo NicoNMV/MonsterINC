@@ -17,6 +17,7 @@ import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.RadioButton;
 
 import androidx.annotation.NonNull;
@@ -51,20 +52,11 @@ public class door extends AppCompatActivity implements  SensorEventListener {
         sensorManager.registerListener( this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
-    @Override
-    public void onSensorChanged(SensorEvent event) {
-        float x = event.values[0],
-                y = event.values[1],
-                z = event.values[2];
-    }
-
-    @Override
-    public void onAccuracyChanged(Sensor sensor, int i) {
-
-    }
 
 
-    public void locDoor(View view){
+    public void onSensorChanged(SensorEvent event){
+
+        float direção = event.values[0];
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(door.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
@@ -76,21 +68,28 @@ public class door extends AppCompatActivity implements  SensorEventListener {
         LocationListener locationListener = new ClassLocation();
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
 
-        if(rd1.isChecked() == true){
+        if(rd1.isChecked() == true && direção < -1){
             Uri uri = Uri.parse("https://goo.gl/maps/FfGhsWWbtM9SJiAM9");
             Intent it = new Intent(Intent.ACTION_VIEW,uri);
             startActivity(Intent.createChooser(it, getString(R.string.chNavegador)));
         }
-        else if(rd2.isChecked() == true){
+        else if(rd2.isChecked() == true && direção < -1){
             Uri uri = Uri.parse("https://goo.gl/maps/G9JxDatLG8TtUXds8");
             Intent it = new Intent(Intent.ACTION_VIEW,uri);
             startActivity(Intent.createChooser(it, getString(R.string.chNavegador)));
         }
-        else{
+        else if(rd3.isChecked() == true && direção < -1){
             Uri uri = Uri.parse("https://goo.gl/maps/8YTGewccjgA8SGFV8");
             Intent it = new Intent(Intent.ACTION_VIEW,uri);
             startActivity(Intent.createChooser(it, getString(R.string.chNavegador)));
         }
+        else{
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int i) {
+
     }
 
     public void openID(View view) {
