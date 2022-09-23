@@ -15,10 +15,12 @@ import android.hardware.SensorManager;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -43,27 +45,29 @@ public class door extends AppCompatActivity implements  SensorEventListener {
         rd1 = findViewById(R.id.rdbDoor1);
         rd2 = findViewById(R.id.rdbDoor2);
         rd3 = findViewById(R.id.rdbDoor3);
+        
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener( this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)   != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(door.this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+            ActivityCompat.requestPermissions(door.this, new String[] {Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
+            ActivityCompat.requestPermissions(door.this, new String[] {Manifest.permission.ACCESS_NETWORK_STATE}, 1);
+        }
+        LocationManager  locationManager  = (LocationManager) getSystemService(LOCATION_SERVICE);
+        LocationListener locationListener = new local();
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
+        if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
+            double latitude = local.latitude;
+            double longitude = local.longitude;
+        }
     }
-
-
 
     public void onSensorChanged(SensorEvent event){
 
         float direção = event.values[0];
-
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(door.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-            ActivityCompat.requestPermissions(door.this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
-            ActivityCompat.requestPermissions(door.this, new String[]{Manifest.permission.ACCESS_NETWORK_STATE}, 1);
-            return;
-        }
-        LocationManager locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-        LocationListener locationListener = new ClassLocation();
-        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
 
         if(rd1.isChecked() == true && direção < -7){
             Uri uri = Uri.parse("https://goo.gl/maps/FfGhsWWbtM9SJiAM9");
