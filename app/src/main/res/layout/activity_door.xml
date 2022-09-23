@@ -4,21 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Rosa"
     tools:context=".door">
 
     <ImageButton
         android:id="@+id/btnporta"
-        android:layout_width="414dp"
-        android:layout_height="678dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="36dp"
+        android:layout_width="419dp"
+        android:layout_height="497dp"
         android:backgroundTint="@color/Rosa"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="buscarGPS"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton18"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/divider20"
-        app:layout_constraintTop_toBottomOf="@+id/divider20"
-        app:layout_constraintVertical_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/door" />
 
     <View
@@ -28,36 +25,39 @@
         android:background="?android:attr/listDivider"
         android:backgroundTint="@color/roxo"
         android:backgroundTintMode="add"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="663dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="77dp"
         android:layout_height="69dp"
+        android:layout_marginEnd="1dp"
         android:backgroundTint="@color/roxo"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/icons8_porta_30"
-        tools:layout_editor_absoluteX="333dp"
-        tools:layout_editor_absoluteY="664dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/icons8_porta_30" />
 
     <ImageButton
         android:id="@+id/imageButton8"
         android:layout_width="70dp"
         android:layout_height="66dp"
         android:background="@color/roxo"
-        app:srcCompat="@drawable/ic_baseline_person_24"
-        tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="665dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
 
     <ImageButton
         android:id="@+id/imageButton17"
         android:layout_width="75dp"
         android:layout_height="73dp"
         android:backgroundTint="@color/roxo"
-        app:srcCompat="@drawable/ic_baseline_school_24"
-        tools:layout_editor_absoluteX="252dp"
-        tools:layout_editor_absoluteY="661dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+        app:layout_constraintStart_toEndOf="@+id/imageButton19"
+        app:srcCompat="@drawable/ic_baseline_school_24" />
 
     <ImageButton
         android:id="@+id/imageButton18"
@@ -65,17 +65,20 @@
         android:layout_height="68dp"
         android:background="@color/roxo"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:srcCompat="@drawable/ic_baseline_auto_stories_24"
-        tools:layout_editor_absoluteX="77dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imageButton19"
+        app:layout_constraintStart_toEndOf="@+id/imageButton8"
+        app:srcCompat="@drawable/ic_baseline_auto_stories_24" />
 
     <ImageButton
         android:id="@+id/imageButton19"
         android:layout_width="78dp"
         android:layout_height="72dp"
         android:backgroundTint="@color/roxo"
-        app:srcCompat="@drawable/ic_baseline_home_24"
-        tools:layout_editor_absoluteX="166dp"
-        tools:layout_editor_absoluteY="662dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_home_24" />
 
     <View
         android:id="@+id/divider7"
@@ -111,23 +114,88 @@
         tools:layout_editor_absoluteY="663dp" />
 
     <View
-        android:id="@+id/divider15"
-        android:layout_width="3dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="250dp"
-        android:layout_marginEnd="100dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintEnd_toStartOf="@+id/divider5"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="663dp" />
-
-    <View
         android:id="@+id/divider20"
         android:layout_width="425dp"
         android:layout_height="62dp"
         android:background="?android:attr/listDivider"
         android:backgroundTint="#B48CFC"
         android:backgroundTintMode="src_over"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-5dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="70dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="3dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/m"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btncarteira6"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="-56dp"
+        android:background="@color/roxo"
+        android:onClick="openID"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/divider20"
+        app:layout_constraintEnd_toEndOf="@+id/divider17"
+        app:layout_constraintHorizontal_bias="0.903"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:srcCompat="@drawable/ic_baseline_assignment_ind_24" />
+
+    <RadioGroup
+        android:layout_width="365dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnporta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView44">
+
+        <RadioButton
+            android:id="@+id/rdbDoor1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/opdoor"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rdbDoor2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opdoor"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rdbDoor3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/opdoor"
+            android:textColor="@color/black" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/monsterfont"
+        android:text="@string/titulodoor"
+        android:textColor="@color/titulo"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider20" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

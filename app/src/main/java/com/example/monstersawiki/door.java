@@ -42,8 +42,6 @@ public class door extends AppCompatActivity implements  SensorEventListener {
         float x = event.values[0],
                 y = event.values[1],
                 z = event.values[2];
-
-
         }
 
     @Override
@@ -73,6 +71,8 @@ public class door extends AppCompatActivity implements  SensorEventListener {
         latitude = location.getLatitude();
         longitude = location.getLongitude();
         }
+
+
 
         public void openID(View view) {
             Intent intent = new Intent(this, menuID.class);

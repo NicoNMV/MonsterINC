@@ -57,6 +57,8 @@
     <string name="monstrosTit2">Monstros</string>
 
     // Activity Door
+    <string name="titulodoor">Escolha o destino</string>
+    <string name="opdoor">Desconhecido</string>
 
 
     // Activity Quiz
