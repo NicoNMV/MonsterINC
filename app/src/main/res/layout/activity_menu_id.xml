@@ -96,7 +96,7 @@
         android:layout_height="43dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/monsterfont"
-        android:text="Crie seu perfil"
+        android:text="@string/crie_seu_perfil"
         android:textColor="@color/titulo"
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -108,7 +108,7 @@
         android:layout_width="264dp"
         android:layout_height="48dp"
         android:ems="10"
-        android:hint="Digite seu nome"
+        android:hint="@string/hint"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
@@ -125,7 +125,7 @@
         android:backgroundTint="@color/titulo"
         android:foregroundTint="@color/titulo"
         android:onClick="createID"
-        android:text="Criar"
+        android:text="@string/btncriar"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
@@ -184,7 +184,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="Escolha seu avatar:"
+        android:text="@string/escolha_seu_avatar"
         android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/divider2"
@@ -215,21 +215,21 @@
             android:layout_width="132dp"
             android:layout_height="46dp"
             android:checked="true"
-            android:text="Sulley"
+            android:text="@string/op1"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/boo"
             android:layout_width="130dp"
             android:layout_height="46dp"
-            android:text="Boo"
+            android:text="@string/op2"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/mike"
             android:layout_width="117dp"
             android:layout_height="match_parent"
-            android:text="Mike"
+            android:text="@string/op3"
             android:textSize="20sp" />
 
     </RadioGroup>
