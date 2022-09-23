@@ -1,16 +1,15 @@
 <resources>
     <string name="app_name">Monstros S.A. Wiki</string>
-    <string name="title_activity_characters">characters</string>
-    <string name="sinopse">
-        A maior fábrica de monstros do mundo conta com James Sullivan, um dos monstros mais assustadores, que tem o pelo azul e chifres, além de seu assistente e melhor amigo Mike, um monstro verde de um olho só. Eles têm por missão assustar as crianças, que são consideradas tóxicas pelos monstros e cujo contato com eles seria catastrófico para seu mundo. Porém, ao visitar o mundo dos humanos a trabalho, Mike e Sully conhecem a garota Boo, que acaba sem querer indo parar no mundo dos monstros.
-    </string>
-    <string name="sinopseUni">
-        Mike e Sulley, alunos promissores da Universidade Monstros, são forçados a se unirem quando sua disputa acirrada pelo posto de aluno mais assustador da turma foge ao controle e eles acabam sendo expulsos da faculdade.
-    </string>
-    <string name="universidade">
-        A universidade, presente no filme, foi inspirada em universidades famosas dos Estados Unidos, incluindo Berkeley, que inspirou a entrada da escola dentro da animação.
-    </string>
-    <string name="action_settings">Settings</string>
+
+    // Activity Home
+    <string name="personagens">Personagens</string>
+    <string name="monstros_s_a">Monstros S.A.</string>
+    <string name="quiz">Quiz</string>
+    <string name="universidadeHome">Universidade</string>
+    <string name="porta">Porta</string>
+    <string name="historiaHome">Historia</string>
+
+    // Activity Character
     <string name="sulley">
         Ao trabalhar para devolver Boo ao mundo humano, Sulley consegue descobrir uma conspiração da empresa enquanto também resolve uma crise de energia que assolou a cidade de Monstrópolis .
     </string>
@@ -29,7 +28,65 @@
     <string name="water">
         Ele é levado à vilania por desespero para manter a Monsters, Inc. à tona no meio da crise de energia.
     </string>
-    <string name="chNavegador" />
+
+    <string name="BooName">Boo</string>
+    <string name="SulleyName">Sulley</string>
+    <string name="MikeName">Mike</string>
+    <string name="RozName">Roz</string>
+    <string name="WaterName">Waternoose</string>
+    <string name="RandallName">Randall</string>
+
+    <string name="btnPersonagens">Cena Pós-Credito</string>
+
+    // Activity Story
+    <string name="sinopse">
+        A maior fábrica de monstros do mundo conta com James Sullivan, um dos monstros mais assustadores, que tem o pelo azul e chifres, além de seu assistente e melhor amigo Mike, um monstro verde de um olho só. Eles têm por missão assustar as crianças, que são consideradas tóxicas pelos monstros e cujo contato com eles seria catastrófico para seu mundo. Porém, ao visitar o mundo dos humanos a trabalho, Mike e Sully conhecem a garota Boo, que acaba sem querer indo parar no mundo dos monstros.
+    </string>
     <string name="saiba_mais">Saiba Mais</string>
     <string name="historia">Historia</string>
+
+    // Activity University
+    <string name="sinopseUni">
+        Mike e Sulley, alunos promissores da Universidade Monstros, são forçados a se unirem quando sua disputa acirrada pelo posto de aluno mais assustador da turma foge ao controle e eles acabam sendo expulsos da faculdade.
+    </string>
+    <string name="universidade">
+        A universidade, presente no filme, foi inspirada em universidades famosas dos Estados Unidos, incluindo Berkeley, que inspirou a entrada da escola dentro da animação.
+    </string>
+    <string name="btnUni">Confira a universidade da vida real:</string>
+    <string name="universidadeTitulo">Universidade</string>
+    <string name="monstrosTit2">Monstros</string>
+
+    // Activity Door
+
+
+    // Activity Quiz
+    <string name="sim">Sim</string>
+    <string name="no">Não</string>
+    <string name="descubra_seu">Descubra seu</string>
+    <string name="monstro">Monstro</string>
+    <string name="descubra">Descubra</string>
+    <string name="pergunta1">Você tem medo de aranha?</string>
+    <string name="pergunta2">Você tem medo de altura?</string>
+    <string name="pergunta3">Você tem medo do escuro?</string>
+
+    // Activity ID
+    <string name="crie_seu_perfil">Crie seu perfil</string>
+    <string name="escolha_seu_avatar">Escolha seu avatar:</string>
+    <string name="op1">Sulley</string>
+    <string name="op2">Boo</string>
+    <string name="op3">Mike</string>
+    <string name="btncriar">Criar</string>
+    <string name="hint">Digite seu nome</string>
+
+    // Activities ID
+    <string name="departamento_susto">Departamento: Susto</string>
+    <string name="identidade">identidade</string>
+    <string name="posi_o_intrusa">Posição: Intrusa</string>
+    <string name="posi_o_assistente">Posição: Assistente</string>
+    <string name="posi_o_assustador">Posição: Assustador</string>
+
+    <string name="title_activity_characters">characters</string>
+    <string name="action_settings">Settings</string>
+    <string name="chNavegador" />
+
 </resources>
