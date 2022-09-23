@@ -58,7 +58,7 @@
 
     // Activity Door
     <string name="titulodoor">Escolha o destino</string>
-    <string name="opdoor">Desconhecido</string>
+    <string name="opdoor">Unknown</string>
 
 
     // Activity Quiz

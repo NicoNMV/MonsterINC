@@ -28,9 +28,6 @@ import androidx.core.app.ActivityCompat;
 public class door extends AppCompatActivity implements  SensorEventListener {
 
     RadioButton rd1,rd2,rd3;
-    double[] himalaias = {34.1504, 78.4687},
-            tokyo = {35.7117, 139.3967},
-            hawaii = {19.5711, -155.5355};
 
     SensorManager sensorManager;
     Sensor sensor;
@@ -68,17 +65,17 @@ public class door extends AppCompatActivity implements  SensorEventListener {
         LocationListener locationListener = new ClassLocation();
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
 
-        if(rd1.isChecked() == true && direção < -1){
+        if(rd1.isChecked() == true && direção < -7){
             Uri uri = Uri.parse("https://goo.gl/maps/FfGhsWWbtM9SJiAM9");
             Intent it = new Intent(Intent.ACTION_VIEW,uri);
             startActivity(Intent.createChooser(it, getString(R.string.chNavegador)));
         }
-        else if(rd2.isChecked() == true && direção < -1){
+        else if(rd2.isChecked() == true && direção < -7){
             Uri uri = Uri.parse("https://goo.gl/maps/G9JxDatLG8TtUXds8");
             Intent it = new Intent(Intent.ACTION_VIEW,uri);
             startActivity(Intent.createChooser(it, getString(R.string.chNavegador)));
         }
-        else if(rd3.isChecked() == true && direção < -1){
+        else if(rd3.isChecked() == true && direção < -7){
             Uri uri = Uri.parse("https://goo.gl/maps/8YTGewccjgA8SGFV8");
             Intent it = new Intent(Intent.ACTION_VIEW,uri);
             startActivity(Intent.createChooser(it, getString(R.string.chNavegador)));

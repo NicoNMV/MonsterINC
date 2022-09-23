@@ -242,6 +242,7 @@
         android:onClick="openID"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toStartOf="@+id/divider"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/divider"
         app:layout_constraintTop_toBottomOf="@+id/divider"
         app:srcCompat="@drawable/ic_baseline_assignment_ind_24" />
@@ -265,14 +266,15 @@
         android:id="@+id/imageButton25"
         android:layout_width="167dp"
         android:layout_height="156dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="37dp"
         android:backgroundTint="@color/Rosa"
         android:onClick="openQuiz"
         android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/randall" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -102,12 +102,11 @@
         android:id="@+id/btncarteira4"
         android:layout_width="52dp"
         android:layout_height="55dp"
-        android:layout_marginStart="324dp"
+        android:layout_marginStart="355dp"
         android:layout_marginTop="-56dp"
         android:background="@color/roxo"
         android:onClick="openID"
         android:scaleType="fitCenter"
-        app:layout_constraintHorizontal_bias="0.903"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider23"
         app:srcCompat="@drawable/ic_baseline_assignment_ind_24" />
