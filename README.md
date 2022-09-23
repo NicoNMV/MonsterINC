@@ -3,5 +3,4 @@
  
  Dupla: Maria Eduarda Cavalcante e Nicolas Moresco
 
- O aplicativo foi desenvolvido no intuito de entreter os usuários sobre a animação Monstros S.A, 
-Buscamos entreter o usuário.
+ O aplicativo foi desenvolvido no intuito de entreter os usuários sobre a animação Monstros S.A, descrevendo curiosidades sobre o filme.
