@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 public class sulley extends AppCompatActivity {
 
+    // Declara elemento
     TextView NameBack;
 
     @Override
@@ -15,13 +16,17 @@ public class sulley extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sulley);
 
+        // esconde barra superior
         getSupportActionBar().hide();
 
+        // elemento pelo ID
         NameBack = findViewById(R.id.txtNameBack);
 
+        // recupera informação da intent anterior
         Intent intentDisplay = getIntent();
         String messageDisplay = intentDisplay.getStringExtra(menuID.EXTRA_MESSAGE);
 
+        // define texto da TextView
         NameBack.setText(messageDisplay);
 
     }

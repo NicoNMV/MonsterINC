@@ -15,13 +15,17 @@ public class boo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_boo);
 
+        // esconde barra superior
         getSupportActionBar().hide();
 
+        // Declara o elemento pelo ID
         NameBack = findViewById(R.id.txtNameBack);
 
+        // recebe a informação da intent anterior
         Intent intentDisplay = getIntent();
         String messageDisplay = intentDisplay.getStringExtra(menuID.EXTRA_MESSAGE);
 
+        // define texto da TextView
         NameBack.setText(messageDisplay);
 
     }

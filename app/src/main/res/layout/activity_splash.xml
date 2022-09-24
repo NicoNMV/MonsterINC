@@ -8,7 +8,7 @@
     tools:context=".splash">
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/imgCilindro"
         android:layout_width="530dp"
         android:layout_height="255dp"
         android:layout_marginTop="73dp"
@@ -17,11 +17,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imgSplash"
         app:srcCompat="@drawable/help_removebg_preview" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imgSplash"
         android:layout_width="326dp"
         android:layout_height="294dp"
         android:layout_marginStart="42dp"
@@ -44,7 +44,7 @@
         android:layout_marginBottom="-132dp"
         android:progressTint="@color/design_default_color_error"
         android:rotation="-5"
-        app:layout_constraintBottom_toTopOf="@+id/imageView9"
-        app:layout_constraintStart_toEndOf="@+id/imageView9" />
+        app:layout_constraintBottom_toTopOf="@+id/imgCilindro"
+        app:layout_constraintStart_toEndOf="@+id/imgCilindro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

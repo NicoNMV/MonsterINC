@@ -8,7 +8,7 @@
     tools:context=".university">
 
     <View
-        android:id="@+id/divider26"
+        android:id="@+id/barra19"
         android:layout_width="416dp"
         android:layout_height="60dp"
         android:background="?android:attr/listDivider"
@@ -19,13 +19,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView22"
+        android:id="@+id/imgM10"
         android:layout_width="70dp"
         android:layout_height="52dp"
         android:layout_marginTop="3dp"
         android:scaleType="fitCenter"
-        app:layout_constraintEnd_toEndOf="@+id/divider26"
-        app:layout_constraintStart_toStartOf="@+id/divider26"
+        app:layout_constraintEnd_toEndOf="@+id/barra19"
+        app:layout_constraintStart_toStartOf="@+id/barra19"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/m" />
 
@@ -38,12 +38,12 @@
         android:background="@color/roxo"
         android:onClick="openID"
         android:scaleType="fitCenter"
-        app:layout_constraintStart_toStartOf="@+id/divider26"
-        app:layout_constraintTop_toBottomOf="@+id/divider26"
+        app:layout_constraintStart_toStartOf="@+id/barra19"
+        app:layout_constraintTop_toBottomOf="@+id/barra19"
         app:srcCompat="@drawable/ic_baseline_assignment_ind_24" />
 
     <TextView
-        android:id="@+id/textView32"
+        android:id="@+id/TituloUni1"
         android:layout_width="275dp"
         android:layout_height="43dp"
         android:layout_marginTop="24dp"
@@ -53,10 +53,10 @@
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider26" />
+        app:layout_constraintTop_toBottomOf="@+id/barra19" />
 
     <TextView
-        android:id="@+id/textView34"
+        android:id="@+id/TituloUni2"
         android:layout_width="220dp"
         android:layout_height="42dp"
         android:layout_marginTop="3dp"
@@ -66,10 +66,10 @@
         android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+        app:layout_constraintTop_toBottomOf="@+id/TituloUni1" />
 
     <View
-        android:id="@+id/divider28"
+        android:id="@+id/barra20"
         android:layout_width="412dp"
         android:layout_height="73dp"
         android:background="?android:attr/listDivider"
@@ -79,7 +79,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/TituloCarteira"
         app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
@@ -111,7 +111,7 @@
         android:backgroundTint="@color/roxo"
         android:onClick="openHome"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/divider28"
+        app:layout_constraintEnd_toEndOf="@+id/barra20"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_baseline_home_24" />
 
@@ -139,7 +139,7 @@
         app:srcCompat="@drawable/icons8_porta_30" />
 
     <TextView
-        android:id="@+id/textView35"
+        android:id="@+id/txtFilme"
         android:layout_width="401dp"
         android:layout_height="106dp"
         android:layout_marginTop="15dp"
@@ -149,10 +149,10 @@
         android:textSize="17dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+        app:layout_constraintTop_toBottomOf="@+id/TituloUni2" />
 
     <TextView
-        android:id="@+id/textView36"
+        android:id="@+id/txtTextoUni"
         android:layout_width="401dp"
         android:layout_height="86dp"
         android:text="@string/universidade"
@@ -162,16 +162,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+        app:layout_constraintTop_toBottomOf="@+id/imgUniver" />
 
     <ImageView
-        android:id="@+id/imageView25"
+        android:id="@+id/imgUniver"
         android:layout_width="378dp"
         android:layout_height="189dp"
         android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView35"
+        app:layout_constraintTop_toBottomOf="@+id/txtFilme"
         app:srcCompat="@drawable/univers" />
 
     <ImageButton
@@ -182,7 +182,7 @@
         android:backgroundTint="@color/Sully"
         android:onClick="openLocalUniversity"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/divider28"
+        app:layout_constraintBottom_toTopOf="@+id/barra20"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/university" />
@@ -200,6 +200,6 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView26"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+        app:layout_constraintTop_toBottomOf="@+id/txtTextoUni" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

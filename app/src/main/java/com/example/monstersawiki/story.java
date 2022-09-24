@@ -17,10 +17,12 @@ public class story extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_story);
 
+        // Esconde barra superior
         getSupportActionBar().hide();
 
     }
     public void openAbout(View view){
+        // abre intent implicita de pesquisa web
         Intent intent = new Intent(Intent.ACTION_WEB_SEARCH);
         String query = "Monstros S.A.";
         intent.putExtra(SearchManager.QUERY, query);
@@ -28,6 +30,8 @@ public class story extends AppCompatActivity {
 
     }
 
+
+    // Intents que abrem as outras activities
     public void openID(View view){
         Intent intent = new Intent(this, menuID.class);
         startActivity(intent);

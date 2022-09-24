@@ -11,6 +11,7 @@ import android.widget.ProgressBar;
 
 public class splash extends AppCompatActivity {
 
+    // Declara elemento
     ProgressBar progressBar;
 
     @Override
@@ -18,16 +19,11 @@ public class splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        // Tela cheia
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        /*new Handler().postDelayed(new Runnable(){
-            @Override
-            public void run(){
-                startActivity(new Intent(getBaseContext(), MainActivity.class));
-                finish();
-           }
-       },5000); */
 
+        // Elemento pelo ID
         progressBar = findViewById(R.id.progress_bar);
 
         progressBar.setMax(100);
@@ -36,9 +32,10 @@ public class splash extends AppCompatActivity {
         progressAnimation();
     }
 
+    // Animação e definição de tempo
     public void progressAnimation(){
         ProgressBarAnimation anim = new ProgressBarAnimation(this, progressBar, 0f, 100f);
-        anim.setDuration(9000);
+        anim.setDuration(7000);
         progressBar.setAnimation(anim);
     }
 }

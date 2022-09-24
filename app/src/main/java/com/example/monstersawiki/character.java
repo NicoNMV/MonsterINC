@@ -14,8 +14,11 @@ public class character extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_character);
 
+        // Esconde barra superior
         getSupportActionBar().hide();
     }
+
+    // Intents que levam para o YouTube (botão)
     public void openCena1(View view){
         Uri uri = Uri.parse("https://youtu.be/wV_FMbJ2e6w");
         Intent it = new Intent(Intent.ACTION_VIEW,uri);
@@ -32,6 +35,8 @@ public class character extends AppCompatActivity {
         startActivity(Intent.createChooser(it, getString(R.string.chNavegador)));
     }
 
+
+    // Intents para as outras activities
     public void openID(View view){
         Intent intent = new Intent(this, menuID.class);
         startActivity(intent);

@@ -29,8 +29,10 @@ import androidx.core.app.ActivityCompat;
 
 public class door extends AppCompatActivity implements  SensorEventListener {
 
+    // Declara elementos
     RadioButton rd1,rd2,rd3;
 
+    // Sensor
     SensorManager sensorManager;
     Sensor sensor;
 
@@ -40,35 +42,41 @@ public class door extends AppCompatActivity implements  SensorEventListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_door);
 
+        // Esconde barra superior
         getSupportActionBar().hide();
 
+        // Define elementos pelo ID
         rd1 = findViewById(R.id.rdbDoor1);
         rd2 = findViewById(R.id.rdbDoor2);
         rd3 = findViewById(R.id.rdbDoor3);
         
-
+        // Sensor
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         sensorManager.registerListener( this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
 
+        // Permissão e Localização
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)   != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(door.this, new String[] {Manifest.permission.ACCESS_FINE_LOCATION}, 1);
             ActivityCompat.requestPermissions(door.this, new String[] {Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
             ActivityCompat.requestPermissions(door.this, new String[] {Manifest.permission.ACCESS_NETWORK_STATE}, 1);
         }
         LocationManager  locationManager  = (LocationManager) getSystemService(LOCATION_SERVICE);
-        LocationListener locationListener = new local();
+        LocationListener locationListener = new ClassLocation();
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, locationListener);
         if (locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)) {
-            double latitude = local.latitude;
-            double longitude = local.longitude;
+            double latitude = ClassLocation.latitude;
+            double longitude = ClassLocation.longitude;
         }
     }
 
+    // Quando ativa o sensor
     public void onSensorChanged(SensorEvent event){
 
+        // Variável do Sensor
         float direção = event.values[0];
 
+        // Condições para ir a determinado lugar por meio de Intent
         if(rd1.isChecked() == true && direção < -7){
             Uri uri = Uri.parse("https://goo.gl/maps/FfGhsWWbtM9SJiAM9");
             Intent it = new Intent(Intent.ACTION_VIEW,uri);
@@ -93,6 +101,7 @@ public class door extends AppCompatActivity implements  SensorEventListener {
 
     }
 
+    // Intents para as outras activities
     public void openID(View view) {
         Intent intent = new Intent(this, menuID.class);
         startActivity(intent);

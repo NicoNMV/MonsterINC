@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/door" />
 
     <View
-        android:id="@+id/divider4"
+        android:id="@+id/barra6"
         android:layout_width="409dp"
         android:layout_height="70dp"
         android:background="?android:attr/listDivider"
@@ -119,7 +119,7 @@
         tools:layout_editor_absoluteY="663dp" />
 
     <View
-        android:id="@+id/divider20"
+        android:id="@+id/barra5"
         android:layout_width="425dp"
         android:layout_height="62dp"
         android:background="?android:attr/listDivider"
@@ -130,7 +130,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/imgM2"
         android:layout_width="70dp"
         android:layout_height="52dp"
         android:layout_marginTop="3dp"
@@ -150,11 +150,11 @@
         android:background="@color/roxo"
         android:onClick="openID"
         android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/divider20"
-        app:layout_constraintEnd_toEndOf="@+id/divider17"
+        app:layout_constraintBottom_toBottomOf="@+id/barra5"
+        app:layout_constraintEnd_toEndOf="@+id/barra3"
         app:layout_constraintHorizontal_bias="0.903"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:layout_constraintTop_toBottomOf="@+id/barra15"
         app:srcCompat="@drawable/ic_baseline_assignment_ind_24" />
 
     <RadioGroup
@@ -165,7 +165,7 @@
         app:layout_constraintBottom_toTopOf="@+id/btnporta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView44">
+        app:layout_constraintTop_toBottomOf="@+id/TituloPorta">
 
         <RadioButton
             android:id="@+id/rdbDoor1"
@@ -191,7 +191,7 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/textView44"
+        android:id="@+id/TituloPorta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -201,6 +201,6 @@
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider20" />
+        app:layout_constraintTop_toBottomOf="@+id/barra5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@
     tools:context=".mike">
 
     <View
-        android:id="@+id/divider22"
+        android:id="@+id/barra12"
         android:layout_width="582dp"
         android:layout_height="67dp"
         android:background="?android:attr/listDivider"
@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/txtDepar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtNameBack" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/txtPos2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
@@ -41,10 +41,10 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+        app:layout_constraintTop_toBottomOf="@+id/txtDepar2" />
 
     <ImageView
-        android:id="@+id/imageView19"
+        android:id="@+id/imgMiike"
         android:layout_width="244dp"
         android:layout_height="226dp"
         android:layout_marginTop="200dp"
@@ -52,12 +52,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider21"
+        app:layout_constraintTop_toBottomOf="@+id/barra11"
         app:srcCompat="@drawable/carteiramike"
         tools:ignore="MissingConstraints" />
 
     <View
-        android:id="@+id/divider21"
+        android:id="@+id/barra11"
         android:layout_width="582dp"
         android:layout_height="82dp"
         android:background="?android:attr/listDivider"
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/TituloIdentidade2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -76,19 +76,19 @@
         android:text="@string/identidade"
         android:textColor="@color/white"
         android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="@+id/divider10"
+        app:layout_constraintBottom_toBottomOf="@+id/barra17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView18"
+        android:id="@+id/imgIden"
         android:layout_width="333dp"
         android:layout_height="298dp"
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView23"
+        app:layout_constraintTop_toTopOf="@+id/TituloIdentidade2"
         app:srcCompat="@drawable/_c47021f09f18c76f637881cbf50b170_removebg_preview" />
 
     <TextView
@@ -101,5 +101,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+        app:layout_constraintTop_toBottomOf="@+id/imgMiike" />
 </androidx.constraintlayout.widget.ConstraintLayout>

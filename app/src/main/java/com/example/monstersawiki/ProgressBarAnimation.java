@@ -8,6 +8,7 @@ import android.widget.ProgressBar;
 
 public class ProgressBarAnimation extends Animation {
 
+    // Declara elementos
     private Context context;
     private ProgressBar progressBar;
     private float from;
@@ -20,6 +21,7 @@ public class ProgressBarAnimation extends Animation {
         this.to = to;
     }
 
+    // Transformação da ProgressBar
     @Override
     protected void applyTransformation(float interpolatedTime, Transformation t){
         super.applyTransformation(interpolatedTime, t);

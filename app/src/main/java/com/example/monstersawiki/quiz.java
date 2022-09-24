@@ -11,6 +11,7 @@ import android.widget.RadioButton;
 
 public class quiz extends AppCompatActivity {
 
+    // Declara elementos
     RadioButton yes1, yes2, yes3, no1, no2, no3;
     Button find;
 
@@ -19,8 +20,10 @@ public class quiz extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
+        // Esconde barra superior
         getSupportActionBar().hide();
 
+        // Elementos pelo ID
         yes1 = findViewById(R.id.btnYes1);
         yes2 = findViewById(R.id.btnYes2);
         yes3 = findViewById(R.id.btnYes3);
@@ -30,8 +33,11 @@ public class quiz extends AppCompatActivity {
         find = findViewById(R.id.btnFind);
     }
 
+    // Botão Descubra
     public void answerQuiz(View view){
+        // Condições para determinar qual intent abrir
         if(yes1.isChecked() == true && yes2.isChecked() == true && yes3.isChecked() == true){
+            // Abre uma intent implícita
             Uri uri = Uri.parse("https://pixar.fandom.com/pt/wiki/Henry_J._Waternoose");
             Intent it = new Intent(Intent.ACTION_VIEW,uri);
             startActivity(Intent.createChooser(it, getString(R.string.chNavegador)));
@@ -73,6 +79,7 @@ public class quiz extends AppCompatActivity {
         }
     }
 
+    // Intents para as outras activities
     public void openID(View view){
         Intent intent = new Intent(this, menuID.class);
         startActivity(intent);

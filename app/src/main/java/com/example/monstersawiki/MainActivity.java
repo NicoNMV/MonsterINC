@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Declara elementos
     ImageButton btn1;
     ImageButton btn2;
     ImageButton btn3;
@@ -20,8 +21,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Esconde barra superior
         getSupportActionBar().hide();
 
+        // Elementos pelo ID
         btn1 = findViewById(R.id.btncarteira);
         btn2 = findViewById(R.id.btnPersona);
         btn3 = findViewById(R.id.btnstory);
@@ -29,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btn5 = findViewById(R.id.btnuniversity);
     }
 
+    // Intents para as outras activities
     public void openID(View view){
         Intent intent = new Intent(this, menuID.class);
         startActivity(intent);
