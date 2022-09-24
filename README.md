@@ -1,6 +1,8 @@
 # Monstros S.A.
  Aplicativo sobre o filme Monster INC
  
+ Vídeo de Funcionamento: https://youtu.be/wA6V5wpqYCc
+ 
  Dupla: Maria Eduarda Cavalcante e Nicolas Moresco
 
  O aplicativo foi desenvolvido no intuito de entreter os usuários sobre a animação Monstros S.A, descrevendo curiosidades sobre o filme.
@@ -13,3 +15,6 @@
  Tela da universidade: Nesta tela contém informações da universidade onde ocorre a história da animação, mostrando os alunos e fonte de inspiração da universidade. Além que, contém um botão que leva ao navegador onde mostra o lugar usado como referência para a entrada da universidade do filme.
  
  Tela da porta: A tela da porta faz referência com as portas presentes no filme onde levam para qualquer lugar no planeta. Nele contém três radiobutton's com nomes aleatórios, simulando uma rota desconhecida, com isso, o usuário escolhe qualquer das opções e será levado para um local sem o seu conhecimento. Para abrir a porta usamos um sensor que será necessário fazer uma ação semelhante à abertura de uma porta(abertura para a direita) para prosseguir para sua localização.
+ 
+ Foram utilizados conceitos de intents explicitas para a navegação dentro da própria aplicação e também intens implícitas para a navegação com elementos de fora do aplicativo, além de serem usados os conceitos de condiconal, acesso de localização e permissão, a utilização do acelerometro, o uso do arquivo de Strings e de diferentes views dentro das activities (como ProgressBar, Buttons, RadioButtons, ImageButtons, TextViews, ImageViews e ScrollView, por exemplo).
+ 
